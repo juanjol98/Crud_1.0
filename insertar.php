@@ -9,13 +9,13 @@ $apellidos=$_POST['apellidos'];
 $telefono=$_POST['num_tel'];
 $correo=$_POST['Correo'];
 $contraseña=$_POST['contraseña'];
+$pass_fuerte= password_hash($contraseña,PASSWORD_DEFAULT);
 
-
-$sql="INSERT INTO usuarios VALUES('$dni','$nombres','$apellidos', '$telefono', '$correo', '$contraseña')";
+$sql="INSERT INTO usuarios VALUES('$dni','$nombres','$apellidos', '$telefono', '$correo', '$pass_fuerte')";
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: usuario.php");
+    Header("Location: usuarios.php");
     
 }else {
 }

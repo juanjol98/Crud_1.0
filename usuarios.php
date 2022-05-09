@@ -17,22 +17,20 @@
         
     </head>
     <body>
-            <div class="container mt-5">
-                    <div class="row"> 
-                        
-                        <div class="col-md-3">
-                            <h1>Ingrese datos</h1>
-                                <form action="insertar.php" method="POST">
-
-                                   
-                                    <input type="text" class="form-control mb-3" name="cedula" placeholder="cedula" require>
-                                    <input type="text" class="form-control mb-3" name="nombres" placeholder="Nombres" require>
-                                    <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos" require>
-                                    <input type="text" class="form-control mb-3" name="num_tel" placeholder="Telefono" require>
-                                    <input type="email" class="form-control mb-3" name="Correo" placeholder="correo electronico" require>
-                                    <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña" require>
+            <div class="contenedorP">
+                    <div class="contenedor1"> 
+                        <div class="contenedor2">
+                            
+                                <form action="insertar.php" method="POST" class="formulario">       
+                                    <h3>Ingrese un usuario</h3>
+                                    <input type="text" class="campoDatos" name="cedula" placeholder="cedula" required maxlength="11">
+                                    <input type="text" class="campoDatos" name="nombres" placeholder="Nombres" required>
+                                    <input type="text" class="campoDatos" name="apellidos" placeholder="Apellidos" required>
+                                    <input type="text" class="campoDatos" name="num_tel" placeholder="Telefono" required>
+                                    <input type="email" class="campoDatos" name="Correo" placeholder="correo electronico" required>
+                                    <input type="password" class="campoDatos" name="contraseña" placeholder="Contraseña" required>
                                     
-                                    <input type="submit" class="btn btn-primary">
+                                    <input type="submit" class="boton-enviar">
                                 </form>
                         </div>
 
@@ -42,21 +40,21 @@
                             ?>
                             <form action="" method="post" class="busqueda">
                                 <input type="text" name="buscar" id="buscar" value="<?php echo $buscar ?>">
-                                <input type="submit" value="Buscar" id="boton">                                
+                                <input type="submit" value="buscar" id="boton">                                
                             </form>
-                            <table class="table" >
+                            <table class="table">
                                 <thead class="table-success table-striped" >
                                     <tr>
-                                        <th>cedula</th>
+                                        <th>Cédula</th>
                                         <th>Nombres</th>
                                         <th>Apellidos</th>
-                                        <th>Telefono</th>
-                                        <th>correo electronico</th>
+                                        <th>Teléfono</th>
+                                        <th>correo electrónico</th>
                                         <th>contraseña</th>
                                     </tr>
                                 </thead>
                                 <?php
-                                    $sql="SELECT cedula, nombres, apellidos, num_tel, Correo, contraseña FROM usuarios where cedula like '$buscar' '%' or nombres like '$buscar' '%' order by cedula desc";
+                                    $sql="SELECT cedula, nombres, apellidos, num_tel, Correo, contraseña FROM usuarios where cedula like '$buscar' '%' or nombres like '$buscar' '%' or apellidos like '$buscar' '%' or num_tel like '$buscar' '%' or Correo like '$buscar' '%' order by cedula desc";
                                     $query=mysqli_query($con,$sql);
                                 ?>    
                                 <tbody>

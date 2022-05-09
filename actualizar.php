@@ -4,7 +4,7 @@
 
 $id=$_GET['id'];
 
-$sql="SELECT * FROM datos WHERE cod_estudiante='$id'";
+$sql="SELECT * FROM usuarios WHERE cedula='$id'";
 $query=mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -25,15 +25,17 @@ $row=mysqli_fetch_array($query);
                 <div class="container mt-5">
                     <form action="update.php" method="POST">
                     
-                                <input type="hidden" name="cod_estudiante" value="<?php echo $row['cod_estudiante']  ?>">
+                                <input type="hidden" name="cod_estudiante" value="<?php echo $row['cedula']  ?>">
                                 
-                                <input type="text" class="form-control mb-3" name="cedula" placeholder="cedula" value="<?php echo $row['cedula']  ?>">
+                                <input type="text" class="form-control mb-3" name="cedula" placeholder="cedula" value="<?php echo $row['cedula']  ?>" disabled>
                                 <input type="text" class="form-control mb-3" name="nombres" placeholder="Nombres" value="<?php echo $row['nombres']  ?>">
                                 <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos" value="<?php echo $row['apellidos']  ?>">
+                                <input type="text" class="form-control mb-3" name="num_tel" placeholder="Telefono" value="<?php echo $row['num_tel']  ?>">
+                                <input type="text" class="form-control mb-3" name="Correo" placeholder="Apellidos" value="<?php echo $row['Correo']  ?>">
+                                <input type="text" class="form-control mb-3" name="contraseña" placeholder="Apellidos" value="<?php echo $row['contraseña']  ?>">
                                 
                             <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
                     </form>
                     
                 </div>
     </body>
-</html>

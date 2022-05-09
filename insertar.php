@@ -2,17 +2,20 @@
 include("conexion.php");
 $con=conectar();
 
-$cod_estudiante=$_POST['cod_estudiante'];
+
 $dni=$_POST['cedula'];
 $nombres=$_POST['nombres'];
 $apellidos=$_POST['apellidos'];
+$telefono=$_POST['num_tel'];
+$correo=$_POST['Correo'];
+$contraseña=$_POST['contraseña'];
 
 
-$sql="INSERT INTO datos VALUES('$cod_estudiante','$dni','$nombres','$apellidos')";
+$sql="INSERT INTO usuarios VALUES('$dni','$nombres','$apellidos', '$telefono', '$correo', '$contraseña')";
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: alumno.php");
+    Header("Location: usuario.php");
     
 }else {
 }

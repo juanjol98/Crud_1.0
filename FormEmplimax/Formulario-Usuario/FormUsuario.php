@@ -59,6 +59,7 @@
       <input class="controls" type="email" name="correo" id="correo" required placeholder="Ingrese su correo">
       <input class="controls" type="password" name="name" id="contraseña" required placeholder="Ingrese una contraseña">
       <input class="controls" type="password" name="contraseña" id="contraseña" required placeholder="Confirme su contraseña">
+      <input type="text" name="rol" style="display:none;">
       <div class="cont-checkbox">
         <input class="checkbox" type="checkbox" required>
         <h1 class="text-checkbox">Estoy de acuerdo con </h1>
@@ -66,7 +67,7 @@
       </div>
       <input class="botons" type="submit" value="Registarme">
       <div class="text-ini">
-        <a href="/Form inicio/">¿Ya tiene una cuenta?</a>
+        <a href="../Forminicio/Index.php">¿Ya tiene una cuenta?</a>
         <a href="#"> Volver al inicio </a></div>
     </form>
   </div>

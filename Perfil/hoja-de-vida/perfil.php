@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    
     <title>Mi perfil</title>
 </head>
 <body>
@@ -43,6 +44,7 @@
                     <div class="cont-info-p2">
                         <div class="cont-info-p4">
                             <h2>Estudios</h2>
+                            <hr>
                             </div>
                         </div>
                         <div class="icon">
@@ -58,7 +60,8 @@
                 <div class="cont-info-p1">
                     <div class="cont-info-p2">
                         <div class="cont-info-p4">
-                            <h2>Expriencia laboral</h2>    
+                            <h2>Expriencia laboral</h2>  
+                            <hr>  
                             </div>
                         </div>
                         <div class="icon">
@@ -75,6 +78,7 @@
                     <div class="cont-info-p2">
                         <div class="cont-info-p4">
                             <h2>Idiomas</h2>
+                            <hr>
                             </div>
                         </div>
                         <div class="icon">
@@ -91,5 +95,19 @@
     <footer>
 
     </footer>
+
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                
+                    
+                    </div>
+                </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <button class="js-modal-trigger" data-target="modal-js-example">
+        Open JS example modal
+        </button>
 </body>
 </html>

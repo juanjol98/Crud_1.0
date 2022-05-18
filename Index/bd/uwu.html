@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="img">
+            <img src="./Logo.png" alt="">
+        </div>
+
+        <div class="titulo">
+            <h2>Registro</h2>
+        </div>
+        
+        <form  method="post" action="actualizar.php">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <p>Cedula</p>
+                    <input type="text" placeholder="Ingrese su cedula" name="Id_Usuario" required>
+                </div>
+
+                <div class="input-box">
+                    <p>Nombre</p>
+                    <input type="text" placeholder="Ingrese su nombre" name="Nombre" required>
+                </div>
+
+                <div class="input-box">
+                    <p>Apellido</p>
+                    <input type="text" placeholder="Ingrese su apellido" name="Apellido" required>
+                </div>
+
+                <div class="input-box">
+                    <p>Contraseña</p>
+                    <input type="text" placeholder="Ingrese su contraseña" name="Contraseña" required>
+                </div>
+            </div>
+                <div class="btton">
+                    <input type="submit" value="enviar">
+                </div>
+            
+        </form>
+    </div>      
+</body>
+</html>

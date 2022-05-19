@@ -31,9 +31,55 @@
                             </div>
                         </div>
                         <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                            </svg>
+                            <a href="#miModal" class="a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </a>
+                            <div id="miModal" class="modal">
+                                <div class="modal-contenido">
+                                    <a href="#" class="a1">X</a>
+                                    <h1>Mi información personal</h1>
+                                    <p>Aqui podrá modificar información personal.</p>
+                                    <hr class="hr1">
+                                    <form action="#" class="form1">
+
+                                        <div class="inputs">
+                                            <label for="">Documento de identidad</label>
+                                            <input type="number" disabled>
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="">Nombre:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="">Apellidos:</label>
+                                            <input type="text">                                            
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="">Teléfono:</label>
+                                            <input type="number">                                          
+                                        </div>
+                                        <div class="inputs">
+                                            <label for="">Correo electrónico:</label>
+                                            <input type="email">
+                                        </div>
+
+                                        <div class="foto-p">
+                                            <img src="../imagenes/Perfil.png" alt="Foto de perfil">
+                                        </div>
+                                        <div class="input-foto">
+                                            <input class="input-file" id="cambiar-foto" type="file" value="Cambiar foto"> 
+                                            Cambiar foto
+                                        </div>
+
+                                        <div class="button-form1">
+                                            <input class="button" type="submit" value="Guardar">
+                                            <input class="button" type="submit" value="Cancelar">
+                                        </div>  
+                                    </form>
+                                </div>  
+                            </div>
                         </div>                
                     </div>    
                 </div>
@@ -95,19 +141,5 @@
     <footer>
 
     </footer>
-
-    <div id="modal-js-example" class="modal">
-        <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box">
-                
-                    
-                    </div>
-                </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-        </div>
-        <button class="js-modal-trigger" data-target="modal-js-example">
-        Open JS example modal
-        </button>
 </body>
 </html>

@@ -2,8 +2,18 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+};
+
+input[type=number] { -moz-appearance:textfield; }
+
 nav{
     background-color: black;
     width: 100%;
@@ -13,7 +23,7 @@ nav{
     align-items: center;
 }
 h1{
-    color: white;
+    color: black;
 }
 hr{
     width: 70px;
@@ -61,8 +71,7 @@ img{
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    
-    width: 19%;
+    width: 18%;
     height: 100%;
 }
 .FotoP{
@@ -117,7 +126,163 @@ img{
     border-radius: 50%;
     background-color: lightgray;
 }
+.modal-contenido{
+    background-color:whitesmoke;
+    border-radius: 8px;
+    width:700px;
+    padding: 10px 20px;
+    margin: 1% auto;
+    position: relative;
+}
+.modal-contenido p{
+    margin: 7px 0 7px 0;
+}
+.modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+}
+#miModal:target{
+    opacity:1;
+    pointer-events:auto;
+    
+}
+.a{
+    color: black;
+}
+.a1{
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.hr1{
+    margin: 5px 0 0 0;
+    width: 665px;
+    border-radius: 7px;
+    background-color: black;
+}
+/*
+    Inicio diseño formulario 1
+  */
+.form1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.inputs input{
+    outline: none;
+    margin: 5px 0 0 0;
+    border-radius: 4px 4px 0 0; 
+    border:  none;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.759);
+    font-size: 15px;
+    background-color: whitesmoke;
+    height: 30px;
+    padding: 5px 5px 5px 10px;          
+}
+.button-form1{
+    display: flex;
+    justify-content: flex-end;
+}
+.input-foto{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b6cb7;
+    color: white;
+    margin: 20px 5px 0 0;
+    width: 120px;
+    height: 35px;
+    transition: 1s;
+}
+.button:hover{
+    background-color: #417db4;
+}
+#a-cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b6cb7;
+    color: white;
+    margin: 20px 5px 0 0;
+    width: 120px;
+    height: 35px;
+    transition: 1s;
+}
+#a-cancel:hover{
+    background-color: #417db4;
+}
+.input-foto {
+    background-color: #1b6cb7;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left:  8px;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 210px;
+    border-radius: 5px;
+}
+.input-foto:hover{
+    background-color: #417db4;    
+}
+  .input-foto .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 10000px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+   right: -1000px;
+   top: -1000px;
+  }
+  .foto-p{
+    cursor: auto;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 200px;
+    margin: 10px 0 10px 7px;
+    border-radius: 5px;
+    border: solid 1px #417db4;
+    background-color: white;
+  }
+  .foto-p img{
+      width: 200px;
+      height: 200px;
+  }
+
+    /*
+    Fin diseño formulario 1
+  */
 
 footer{
     

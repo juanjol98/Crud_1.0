@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebApplicationJuanJose",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Controllers",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Data",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Migrations",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Models",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Views",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Views\\Registroes",
+    "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Views\\Shared"
+  ],
+  "SelectedNode": "\\WebApplicationJuanJose\\WebApplicationJuanJose\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}
